@@ -44,7 +44,7 @@ WHERE last_name LIKE '%es' AND store_id = 1;
 
 -- 9. How many payment amounts had a number of rentals above 250 for customers
 --    with ids between 380 and 430
-SELECT amount, COUNT(DISTINCT amount)
+SELECT amount, COUNT(amount)
 FROM payment
 WHERE customer_id BETWEEN 380 AND 430
 GROUP BY amount
